@@ -1,0 +1,1 @@
+import sumavalor from "./funciones";
