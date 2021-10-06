@@ -4,3 +4,9 @@ const { Router } = require("express");
 const router = Router();
 
 //definiremos rutas
+
+const { getUsers } = require("../controllers/index");
+
+router.get("/usuarios", getUsers);
+
+module.exports = router;

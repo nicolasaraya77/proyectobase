@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(require("./routes/routes.js"));
 // respond with "hello world" when a GET request is made to the homepage
-app.get("/", function (req, res) {});
 
 //levantar el servidor
 app.listen(3000);
