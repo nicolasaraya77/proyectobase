@@ -1,27 +1,29 @@
-CREATE DATABASE exampleapi;
+
+CREATE DATABASE aerolineas;
 
 
 \l 
 
-\c exampleapi
+\c aerolineas
 
 
-CREATE TABLE users (
+
+CREATE TABLE empleados (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(40),
-    email TEXT
+    
 );
 
 
+CREATE TABLE tripulantes (
+    id SERIAL PRIMARY KEY,
+    
+);
 
-INSERT INTO users (name, email)
-    VALUES ('joe', 'joe@ibm.com'),
-    ('ryan', 'ryan@faztweb.com');
 
-
-
-select * from users;
-
+CREATE TABLE ciudades (
+    id SERIAL PRIMARY KEY,
+    
+);
 
 
 
